@@ -105,6 +105,11 @@ ul {
   cursor: pointer;
 }
 
+.header__btn:hover {
+  background-color:#B9C400 ;
+  color: #262c27;
+}
+
 .header__content {
   min-height: calc(100vh - 161px);
   display: flex;
@@ -256,8 +261,8 @@ ul {
 .info__specs-list {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
- padding-top: 30px;
- padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 15px;
   width: 565px;
 }
 
@@ -269,4 +274,106 @@ ul {
 
 .info__specs-caption {
   width: 180px;
+}
+
+.buy {
+  padding: 150px 0 0;
+}
+
+.buy__inner {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.buy__content {
+  width: 510px;
+  position: relative;
+}
+
+.buy__title {
+  text-transform: uppercase;
+  color: #0093a1;
+  font-family: "Comfortaa", cursive;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.buy__item {
+  margin-bottom: 25px;
+  width: 290px;
+}
+
+.buy__item:hover .buy__item-title {
+  color: #0093a1;
+}
+
+.item-five {
+  width: 260px;
+}
+
+.buy__item-title {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.buy__price {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+  width: 201px;
+  height: 199px;
+  font-size: 35px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/Star\ 1.svg');
+}
+
+.buy__btn {
+  color: #0093a1;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 18px;
+  text-align: center;
+  max-width: 484px;
+  width: 100%;
+ margin-top: 25px;
+  background: rgba(185, 196, 0, 0);
+  border: 2px solid #0093a1;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.buy__btn:hover {
+  border-color: #B9C400;
+  background-color: #B9C400;
+  color: #262c27;
+}
+
+.technology {
+  margin-bottom: 150px;
+}
+
+.technology__top {
+  background-image: url('../images/tech-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 110vh;
+}
+
+.technology__top-inner {
+  position: relative;
+}
+
+.technology__btn {
+  position: absolute;
+  right: 350px;
+  top: 50vh;
 }
