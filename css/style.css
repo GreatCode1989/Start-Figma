@@ -32,10 +32,21 @@ ul {
   list-style: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 60px;
 }
 
 .header {
@@ -103,10 +114,11 @@ ul {
   border: none;
   background: var(--dark, #262c27);
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
 .header__btn:hover {
-  background-color:#B9C400 ;
+  background-color: #b9c400;
   color: #262c27;
 }
 
@@ -227,6 +239,7 @@ ul {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  position: absolute;
 }
 
 .popup-btn span {
@@ -236,7 +249,6 @@ ul {
 }
 
 .info__btn {
-  position: absolute;
   bottom: 0;
   right: 0;
 }
@@ -251,10 +263,6 @@ ul {
 }
 
 .info__specs-title {
-  text-transform: uppercase;
-  font-family: "Comfortaa", cursive;
-  font-size: 60px;
-  font-weight: 400;
   width: 230px;
 }
 
@@ -292,10 +300,7 @@ ul {
 }
 
 .buy__title {
-  text-transform: uppercase;
   color: #0093a1;
-  font-family: "Comfortaa", cursive;
-  font-size: 60px;
   margin-bottom: 50px;
 }
 
@@ -314,7 +319,6 @@ ul {
 
 .buy__item-title {
   margin-bottom: 5px;
-  text-transform: uppercase;
   font-weight: 700;
   transition: color 0.3s;
 }
@@ -330,7 +334,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/Star\ 1.svg');
+  background-image: url("../images/Star\ 1.svg");
 }
 
 .buy__btn {
@@ -343,16 +347,16 @@ ul {
   text-align: center;
   max-width: 484px;
   width: 100%;
- margin-top: 25px;
+  margin-top: 25px;
   background: rgba(185, 196, 0, 0);
   border: 2px solid #0093a1;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .buy__btn:hover {
-  border-color: #B9C400;
-  background-color: #B9C400;
+  border-color: #b9c400;
+  background-color: #b9c400;
   color: #262c27;
 }
 
@@ -361,19 +365,128 @@ ul {
 }
 
 .technology__top {
-  background-image: url('../images/tech-bg.png');
+  background-image: url("../images/tech-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 110vh;
 }
 
 .technology__top-inner {
   position: relative;
+  min-height: 150vh;
 }
 
 .technology__btn {
-  position: absolute;
   right: 350px;
-  top: 50vh;
+  top: 70vh;
+}
+
+.technology__top-box {
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+}
+
+.technology__title {
+  max-width: 470px;
+  padding-bottom: 30px;
+}
+
+.technology__list-item {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 25px;
+}
+
+.gallery__box {
+  display: flex;
+  gap: 68px;
+  margin-top: 115px;
+}
+
+.gallery__text {
+  width: 350px;
+  line-height: 120%;
+}
+
+.gallery-min {
+  display: grid;
+  gap: 30px 24px;
+  grid-template-columns: 481px 208px;
+  grid-template-rows: 432px 300px;
+  margin-top: -35%;
+  margin-bottom: 150px;
+  position: relative;
+  padding: 72px 32px 52px;
+}
+
+.gallery-min::before {
+  content: "";
+  position: absolute;
+  border: 3px solid #262c27;
+  border-radius: 200px 0px 300px 0px;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.gallery-min__img--1 {
+  border-radius: 400px 0px 0px 0px;
+  grid-column: 1/3;
+}
+
+.gallery-min__img--2 {
+  border-radius: 0px 0px 0px 300px;
+}
+
+.gallery-max {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px 470px 390px;
+  grid-template-rows: 340px 270px 270px;
+}
+
+.gallery-max__img--2 {
+  border-radius: 0px 500px 0px 0px;
+  grid-column: 2/-1;
+  justify-self: end;
+}
+
+.gallery-max__img--3 {
+  border-radius: 0px 0px 150px 0px;
+}
+
+.gallery-max__img--4 {
+  border-radius: 0px 200px 0px 0px;
+}
+
+.gallery-max__img--5 {
+  border-radius: 200px 0px 0px 0px;
+}
+
+.gallery-max__img--6 {
+  grid-column: 2/-1;
+  border-radius: 0px 0px 0px 400px;
+}
+
+.gallery-max__text {
+  background-color: #0093a1;
+  border-radius: 0px 0px 0px 200px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 100px 0 83px;
+  background-color: #262c27;
+  color: #fff;
 }
